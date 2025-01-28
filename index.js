@@ -4,12 +4,12 @@ document.addEventListener("DOMContentLoaded", () => {
   const uploadMessage = document.querySelector("#upload-message");
 
   //Handle click to open file input
-  uploadContainer.addEventListener("click", ()=>{
+  uploadContainer.addEventListener("click", () => {
     fileInput.click();
   });
 
   // Handle drag-and-drop events
-  uploadContainer.addEventListener("dragover",(e) => {
+  uploadContainer.addEventListener("dragover", (e) => {
     e.preventDefault();
     uploadContainer.classList.add("drag-over");
   });
@@ -18,12 +18,16 @@ document.addEventListener("DOMContentLoaded", () => {
     uploadContainer.classList.remove("drag-over");
   });
 
-uploadContainer.addEventListener("drop", (e) => {
-  e.preventDefault();
-  uploadContainer.classList.remove("drag-over");
-  const file = e.dataTransfer.files[0];
-  handleFile(file);
-});
+  uploadContainer.addEventListener("drop", (e) => {
+    e.preventDefault();
+    uploadContainer.classList.remove("drag-over");
+    const file = e.dataTransfer.files[0];
+    handleFile(file);
+  });
 
-  
+  //Handle file input change
+  fileInput.addEventListener("change", () => {
+    const file = fileInput.files[0];
+    handleFile(file);
+  });
 });
