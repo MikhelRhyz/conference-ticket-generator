@@ -140,3 +140,8 @@ button {
   bottom: 0;
   left: 0;
 }
+
+.upload-area.drag-over{
+  border-color: #007bff;
+  background-color: #f0f8ff;
+}
