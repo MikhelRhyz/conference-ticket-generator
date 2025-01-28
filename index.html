@@ -36,9 +36,9 @@
   </head>
   <body>
     <!-- Form starts -->
+    <img src="assets/images/pattern-squiggly-line-top.svg" alt="squiggly-line-top" class="squiggly-line-top">
+    <img src="assets/images/pattern-squiggly-line-bottom-desktop.svg" alt="squiggly-line-bottom" class="squiggly-line-bottom">
     <div class="main">
-      <img src="assets/images/pattern-squiggly-line-top.svg" alt="squiggly-line-top" class="squiggly-line-top">
-      <img src="assets/images/pattern-squiggly-line-bottom-desktop.svg" alt="squiggly-line-bottom" class="squiggly-line-bottom">
       <div class="container">
         <div
           class="d-flex justify-content-center align-item-center fw-semibold"
@@ -51,15 +51,13 @@
 
           <p>Secure your spot at next year's biggest coding conference.</p>
 
-          <div class="text-left form-input-container">
+          <div class="text-left form-input-container upload-container" id="upload-avatar">
             <label for="avatar"> Upload Avatar </label>
             <br />
-            <div class="upload-container" id="upload-area">
+            <div class="upload-area" id="upload-area">
               <div class="icon">
                 <img src="assets/images/icon-upload.svg" alt="upload icon" />
               </div>
-              <p>Drag and drop or click to upload</p>
-
               <input
                 type="file"
                 name="avatar"
@@ -68,6 +66,7 @@
                 required
                 class="upload-input"
               />
+              <p id="upload-message">Drag and drop or click to upload</p>
             </div>
             <div class="d-flex align-item-center">
               <img
@@ -123,5 +122,6 @@
       <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
       Coded by <a href="#">Your Name Here</a>.
     </div>
+    <script src="index.js"></script>
   </body>
 </html>

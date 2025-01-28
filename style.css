@@ -8,6 +8,7 @@ body {
   color: #fff;
   font-size: 20px;
   font-family: "Work Sans", serif;
+  position: relative;
 }
 .main {
   display: flex;
@@ -15,6 +16,7 @@ body {
   min-height: 100vh;
   align-items: center;
   position: relative;
+  margin: 3rem 0;
 }
 
 .container {
@@ -49,7 +51,7 @@ p {
   opacity: 0.5;
 }
 
-.upload-container {
+.upload-area {
   text-align: center;
   padding: 20px;
   border: 2px dashed #666;
@@ -57,10 +59,10 @@ p {
   background: rgba(0, 0, 0, 0, 0.5);
   background-color: rgba(255, 255, 255, 0.1);
   margin-top: 10px;
-  width: 90%;
+  width: 94%;
 }
 
-.upload-container:hover {
+.upload-area:hover {
   border-color: #ff5eaf;
 }
 
@@ -70,13 +72,13 @@ p {
   border-radius: 5px;
 }
 
-.upload-container .icon {
+.upload-area .icon {
   font-size: 48px;
   margin-bottom: 10px;
   color: #ff5eaf;
 }
 
-.upload-container p {
+.upload-area p {
   margin: 10px 0;
   font-size: 16px;
 }
@@ -112,17 +114,19 @@ input {
   border-radius: 5px;
   width: 100%;
   border: 1px solid rgba(255, 255, 255, 0.3);
-  padding: 5px;
+  padding: 10px;
   margin: 10px 0;
 }
 
 button {
-  width: 103%;
-  padding: 5px;
+  max-width: 366px;
+  min-width: 336px;
+  padding: 10px;
   border-radius: 5px;
   background-color: hsl(7, 88%, 67%);
   border: none;
   font-weight: 600;
+  margin-top: 10px;
 }
 
 .squiggly-line-top {
