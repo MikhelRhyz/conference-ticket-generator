@@ -119,7 +119,7 @@ input {
 }
 
 button {
-  max-width: 366px;
+  width: 366px;
   min-width: 336px;
   padding: 10px;
   border-radius: 5px;
